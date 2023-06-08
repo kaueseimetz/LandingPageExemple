@@ -39,7 +39,7 @@ div#main fieldset h1{
     font-family: Anton;
     font-weight: 500;
 }
-div#main fieldset img{
+div#main fieldset img#yourimage_512x512{
     
     /* image size */
     width: 400px;
@@ -57,13 +57,51 @@ div#main fieldset img{
     top: -40%;
 
 }
-div#iframe{
-    display: inline-block;
-    width: 700px;
-    height: 375px;
-}
 div#description iframe{
     width: 700px;
     height: 375px;
 
+}
+@media (max-width: 600px) {
+    body{
+        background: url(background_phone.png) no-repeat;
+        background-size: cover;
+
+        overflow: auto;
+    }
+    div#description iframe{
+        margin-top: 160px;
+        margin-left: 2%;
+
+        width: 325px;
+        height: 200px;
+    }
+    div#main fieldset{
+        width: 350px;
+        height: 520px;
+    }
+    div#main fieldset #yourimage_512x512{
+        display: none;
+    }
+    div#main fieldset #yourimage_1024x512{
+        
+        position: relative;
+
+        /* image border */
+        border-radius: 15px;
+
+        /* img shadow */
+        box-shadow: 0px 0px 50px rgb(131, 131, 131);
+
+        display: inline-block;
+
+        width: 300px;
+        
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        transform: translate(-50%, -50%);
+        top: -58%;
+        left: 50%;
+    }
 }
