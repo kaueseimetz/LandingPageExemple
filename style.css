@@ -67,7 +67,7 @@ div#description iframe{
         background: url(background_phone.png) no-repeat;
         background-size: cover;
 
-        overflow: auto;
+        
     }
     div#description iframe{
         margin-top: 160px;
